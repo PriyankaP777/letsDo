@@ -8,13 +8,13 @@ function App() {
   }, [])
   return (
     <>
-      <h1> Hello Coders </h1>
+      <h1 className='text-3xl font-bold underline text-center'> Hello Coders </h1>
       {myData.map((post) => {
         const { images, title, description, price, rating } = post;
         return (
-          <div className= " pl-10 ">
+          <div >
             <h2 className=" ">Product Name : {title}</h2>
-            <h3>ProductImage : {images}</h3>
+            {/* <h3> ProductImage : {images}</h3> */}
             <p> Description :{description} </p>
             <p> Price :{price}</p>
             <p> Rating :{rating}</p>
